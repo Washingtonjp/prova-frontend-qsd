@@ -13,15 +13,15 @@
 
 <body>
     <div class=" col-12 titulo  d-flex justify-content-center ">
-        <p> <strong> Faça seu Login ou Cadastre-se </strong> </p>
+        <h1> Faça seu Login ou Cadastre-se </h1>
     </div>
-    <section>
+    <header>
         <div class=" col-12 cadastro1 d-flex">
             <div class="parte1 col-6">
                 <p>Já possui cadastro?</p> <br>
                 <p>Faça seu login clicando a abaixo
                 </p><br>
-                <button type="submit" class=" botaolog ">Faça seu Login </button>
+                <a class="btn_padrao" href="./entrar/prova2.html" >   <button type="submit" class=" botaolog ">Faça seu Login </button> </a>
 
             </div>
             <div class="parte2 col-6 ">
@@ -38,7 +38,7 @@
 
                     <form id="form" name="cadastro">
                         <div class="row">
-                            <div class="col-12">
+                            <div class="col-12 ">
                                 <div class="col-12">
                                     <label for="name" class="form-label">Nome:</label>
                                     <input type="text" class="form-control" id="name">
@@ -55,12 +55,45 @@
                                     <span class="msg-cpf  msg-error invalid-feedback" style="display: none;">CPF inválido</span>
                                     <span class="msg-cpf  msg-success valid-feedback" style="display: none;">ok</span>
                                 </div>
+                                <div class="col-12">
+                                    <label for="rg" class="form-label">rg:</label>
+                                    <input type="text" class="form-control" id="rg" required>
+                                    <span class="msg-rg  msg-error invalid-feedback" style="display: none;">rg inválido</span>
+                                    <span class="msg-rg  msg-success valid-feedback" style="display: none;">ok</span>
+                                </div>
+                                <div class="col-12">
+                                    <label for="CEP" class="form-label">CEP:</label>
+                                    <input type="text" class="form-control" id="CEP" required>
+                                    <span class="msg-CEP  msg-error invalid-feedback" style="display: none;">CEP</span>
+                                    <span class="msg-CEP  msg-success valid-feedback" style="display: none;">ok</span>
+                                </div>
+                                <div class="col-8">
+                                    <label for="rua" class="form-label">rua:</label>
+                                    <input type="text" class="form-control" id="rua" required>
+                        
+                                </div>
+                                <div class="col-4">
+                                    <label for="numero" class="form-label">numero:</label>
+                                    <input type="text" class="form-control" id="numero" required>
+        
+                                </div>
                             </div>        
+                            <div class="col-12">
+                                <label for="Senha" class="form-label">senha:</label>
+                                <input type="password" class="form-control" id="password" required>
                 </div>
+                <div class="col-12">
+                    <label for="Confirmar senha" class="form-label">confirmar senha:</label>
+                    <input type="password" class="form-control" id="password2" required>
+    </div>
+    <div class="col-12">
+        <div class="d-grid gap-2 d-sm-block">
+            <button type="submit" class="btn  ">Cadastrar</button>
+        </div>
                 </div>
+            </div>
 
-
-    </section>
+        </header>
 
 
 

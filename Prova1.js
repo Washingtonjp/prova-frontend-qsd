@@ -29,3 +29,21 @@ iptCpf.onblur = function() {
         msgCpfError.style.display = "block";
     }
 }
+
+
+let iptrg = document.getElementById("rg");
+iptrg.onblur = function() {
+    let regexrg = (^\d{1,2}).?(\d{3}).?(\d{3})-?(\d{1}|X|x$);
+    let msgRgError = document.querySelector(".msg-rg.msg-error");
+    let msgRgOK = document.querySelector(".msg-rg.msg-success");
+
+    if (regexrg.test(iptrg.value)) {
+        msgRgError.style.display = "none";
+        msgRgOK.style.display = "block";
+    } else {
+        msgRgOK.style.display = "none";
+        msgRgError.style.display = "block";
+    }
+}
+
+
