@@ -3,3 +3,10 @@
 .botaolog {background-color: rgb(255, 60, 0);
    color: rgb(255, 255, 255);
 }
+
+
+
+@media (max-width: 700px) {
+    .inicio1 {     
+    
+        display: none;}}
